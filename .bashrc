@@ -52,7 +52,8 @@ function PS1_GIT_BRANCH() {
 }
 
 # Set the promt variable.
-export PS1="$PS1_USER_COLOR\u@\h \e[0;34m\w \e[0;33m\$(PS1_GIT_BRANCH)\n\r$PS1_USER_COLOR\$>\e[m "
+export PS1="\[$PS1_USER_COLOR\]\u@\h \[\e[0;34m\]\w \[\e[0;33m\]\$(PS1_GIT_BRANCH)
+\[$PS1_USER_COLOR\]\$>\[\e[m\] "
 
 
 # Alias Definitions
