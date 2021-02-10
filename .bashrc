@@ -46,8 +46,13 @@ if [ "$EUID" -ne 0 ]; then
   PS1_USER_COLOR="\e[0;32m"
 fi
 
+# Lookup for git branch.
+function PS1_GIT_BRANCH() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
 # Set the promt variable.
-PS1="$PS1_USER_COLOR\u@\h \e[0;34m\w\n$PS1_USER_COLOR\$>\e[m "
+export PS1="$PS1_USER_COLOR\u@\h \e[0;34m\w \e[0;33m\$(PS1_GIT_BRANCH)\n\r$PS1_USER_COLOR\$>\e[m "
 
 
 # Alias Definitions
