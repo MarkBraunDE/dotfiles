@@ -10,6 +10,11 @@
 
 # But include the following:
 
+# Bash Files
+!.bash_aliases
+!.bash_logout
+!.bashrc
+
 # Git Files
 !.gitignore
 
