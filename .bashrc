@@ -41,9 +41,9 @@ shopt -s globstar
 # Configure Prompt Style
 
 # Set different color for root.
-PS1_USER_COLOR="\e[0;31m"
+PS1_USER_COLOR="\e[0;91m"
 if [ "$EUID" -ne 0 ]; then
-  PS1_USER_COLOR="\e[0;32m"
+  PS1_USER_COLOR="\e[0;92m"
 fi
 
 # Lookup for git branch.
@@ -52,7 +52,7 @@ function PS1_GIT_BRANCH() {
 }
 
 # Set the promt variable.
-export PS1="\[$PS1_USER_COLOR\]\u@\h \[\e[0;34m\]\w \[\e[0;33m\]\$(PS1_GIT_BRANCH)
+export PS1="\[$PS1_USER_COLOR\]\u@\h \[\e[0;94m\]\w \[\e[0;93m\]\$(PS1_GIT_BRANCH)
 \[$PS1_USER_COLOR\]\$>\[\e[m\] "
 
 
