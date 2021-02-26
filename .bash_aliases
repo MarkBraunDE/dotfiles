@@ -8,6 +8,7 @@
 
 # File Management
 alias ls="ls -alh --group-directories-first --color --time-style=\"+%Y-%m-%d %H:%M\""
+alias ll="ls -aC --group-directories-first --color"
 alias rm="rm -rdf"
 
 # Git
