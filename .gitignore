@@ -1,12 +1,5 @@
-# FILE:    ~/.gitignore
-# AUTHOR:  mark.braun.1988@gmail.com
-# SUMMARY: Ignores every file in the home directory, expect
-#          the selected files.
-
-
 # Ignore All
 *
-
 
 # But include the following:
 
@@ -18,4 +11,7 @@
 
 # Git Files
 !.gitignore
+
+# X Files
+!.Xresources
 
