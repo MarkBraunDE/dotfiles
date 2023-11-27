@@ -65,7 +65,13 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
+# Configure Environment
+
 # Set Editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Set C# Flags
+export DOTNET_ENVIRONMENT=DEVELOPMENT
+export ASPNETCORE_ENVIRONMENT=DEVELOPMENT
+export DOTNET_WATCH_RESTART_ON_RUDE_EDIT=true
